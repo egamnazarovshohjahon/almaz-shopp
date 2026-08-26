@@ -5,23 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ALMAZ SHOP</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#0b0b0b;color:white}
-.header{text-align:center;padding:35px 15px;background:linear-gradient(135deg,#111,#292929)}
-.header h1{margin:0;color:#ffb300;font-size:32px}.header p{color:#ccc}
-.container{max-width:520px;margin:25px auto;padding:15px}
-.card{background:#191919;padding:22px;border-radius:18px;box-shadow:0 5px 25px rgba(0,0,0,.5)}
-h2{text-align:center}
-label{display:block;margin-top:18px;margin-bottom:8px;color:#ddd}
-input,select{width:100%;padding:15px;border-radius:10px;border:1px solid #444;background:#101010;color:white;font-size:16px}
-.price{margin-top:20px;padding:16px;border-radius:10px;background:#292929;color:#ffb300;text-align:center;font-size:21px;font-weight:bold}
-button{width:100%;margin-top:20px;padding:16px;border:0;border-radius:10px;background:#ffb300;color:#111;font-size:18px;font-weight:bold}
-.payment{display:none;margin-top:20px;padding:18px;background:#242424;border-radius:12px;line-height:1.8}
-.dc{padding:14px;margin-top:12px;background:#111;border:1px solid #ffb300;border-radius:10px;text-align:center}
-.dc-number{display:block;font-size:21px;color:#ffb300;font-weight:bold;margin-top:5px}
-.receipt{display:none;margin-top:15px}
-.telegram{display:block;margin-top:15px;padding:14px;background:#229ED9;color:white;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold}
-.footer{text-align:center;padding:25px;color:#666}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#0b0b0b;color:#fff}.header{text-align:center;padding:30px 15px;background:#191919}.header h1{margin:0;color:#ffb300}.container{max-width:520px;margin:20px auto;padding:15px}.card{background:#191919;padding:20px;border-radius:15px}label{display:block;margin-top:15px;margin-bottom:7px}input,select{width:100%;padding:14px;border-radius:10px;border:1px solid #444;background:#101010;color:#fff;font-size:16px}.price{margin-top:15px;padding:15px;background:#292929;color:#ffb300;text-align:center;border-radius:10px;font-size:20px;font-weight:bold}button{width:100%;margin-top:15px;padding:15px;border:none;border-radius:10px;background:#ffb300;color:#111;font-size:17px;font-weight:bold}.payment{display:none;margin-top:20px;padding:15px;background:#242424;border-radius:10px}.dc{margin-top:15px;padding:15px;text-align:center;border:1px solid #ffb300;border-radius:10px}.dc-number{display:block;margin-top:5px;color:#ffb300;font-size:20px;font-weight:bold}.receipt{display:none}.telegram{display:block;margin-top:15px;padding:14px;background:#229ED9;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold}.footer{text-align:center;padding:25px;color:#666}
 </style>
 </head>
 <body>
@@ -30,43 +14,18 @@ button{width:100%;margin-top:20px;padding:16px;border:0;border-radius:10px;backg
 <h2>💎 Фармоиши донат</h2>
 <label>🎮 Free Fire ID</label>
 <input id="playerId" type="text" inputmode="numeric" placeholder="ID-и Free Fire-ро ворид кунед">
-<label>💎 Интихоби маҳсулот</label>
+<label>💎 Маҳсулот</label>
 <select id="product" onchange="updatePrice()">
-<option data-price="11">110 💎 — 11 сомонӣ</option>
-<option data-price="33">341 💎 — 33 сомонӣ</option>
-<option data-price="55">572 💎 — 55 сомонӣ</option>
-<option data-price="100">1166 💎 — 100 сомонӣ</option>
-<option data-price="180">2398 💎 — 180 сомонӣ</option>
-<option data-price="450">6160 💎 — 450 сомонӣ</option>
-<option data-price="8">Level Up Package 6 — 8 сомонӣ</option>
-<option data-price="10">Level Up Package 10 — 10 сомонӣ</option>
-<option data-price="10">Level Up Package 15 — 10 сомонӣ</option>
-<option data-price="10">Level Up Package 20 — 10 сомонӣ</option>
-<option data-price="10">Level Up Package 25 — 10 сомонӣ</option>
-<option data-price="15">Level Up Package 30 — 15 сомонӣ</option>
-<option data-price="7">Ваучер Lite — 7 сомонӣ</option>
-<option data-price="100">Ваучер на месяц — 100 сомонӣ</option>
-<option data-price="17">Ваучер на неделю — 17 сомонӣ</option>
+<option value="11">110 💎 — 11 сомонӣ</option><option value="33">341 💎 — 33 сомонӣ</option><option value="55">572 💎 — 55 сомонӣ</option><option value="100">1166 💎 — 100 сомонӣ</option><option value="180">2398 💎 — 180 сомонӣ</option><option value="450">6160 💎 — 450 сомонӣ</option><option value="8">Level Up Package 6 — 8 сомонӣ</option><option value="10">Level Up Package 10 — 10 сомонӣ</option><option value="10">Level Up Package 15 — 10 сомонӣ</option><option value="10">Level Up Package 20 — 10 сомонӣ</option><option value="10">Level Up Package 25 — 10 сомонӣ</option><option value="15">Level Up Package 30 — 15 сомонӣ</option><option value="7">Ваучер Lite — 7 сомонӣ</option><option value="100">Ваучер на месяц — 100 сомонӣ</option><option value="17">Ваучер на неделю — 17 сомонӣ</option>
 </select>
 <div class="price" id="price">💰 Нарх: 11 сомонӣ</div>
 <button onclick="showPayment()">🛒 Фармоиш додан</button>
-<div class="payment" id="payment">
-<b>✅ Фармоиш омода шуд!</b>
-<p id="orderInfo"></p>
-<div class="dc">💳 Рақами пардохти DC:<span class="dc-number">XXXXXXXXXX</span></div>
-<p>💰 Маблағи нишон додашударо ба рақами DC пардохт кунед.</p>
-<button onclick="paid()">✅ Ман пардохт кардам</button>
-<div class="receipt" id="receipt">
-<p>📸 Акнун чекро ба саҳифаи расмии мо фиристед:</p>
-<a id="telegramLink" class="telegram" href="#" target="_blank">📸 Чекро равон кунед</a>
-</div>
-</div>
-</div></div>
-<div class="footer">© 2026 ALMAZ SHOP</div>
+<div class="payment" id="payment"><h3>✅ Фармоиш омода шуд!</h3><p id="orderInfo"></p><div class="dc">💳 Рақами пардохти DC:<span class="dc-number">XXXXXXXXXX</span></div><p>💰 Маблағи нишон додашударо ба рақами DC пардохт кунед.</p><button onclick="paid()">✅ Ман пардохт кардам</button><div class="receipt" id="receipt"><p>📸 Чекро ба Telegram фиристед:</p><a id="telegramLink" class="telegram" href="#">📸 Чекро равон кунед</a></div></div>
+</div></div><div class="footer">© 2026 ALMAZ SHOP</div>
 <script>
-function updatePrice(){let p=document.getElementById("product"),o=p.options[p.selectedIndex],price=o.getAttribute("data-price");document.getElementById("price").innerHTML="💰 Нарх: "+price+" сомонӣ"}
-function showPayment(){let id=document.getElementById("playerId").value.trim();if(id===""){alert("⚠️ Аввал Free Fire ID-ро навис!");return}let p=document.getElementById("product"),o=p.options[p.selectedIndex],name=o.text,price=o.getAttribute("data-price");document.getElementById("orderInfo").innerHTML="🎮 Free Fire ID: <b>"+id+"</b><br>💎 Маҳсулот: <b>"+name+"</b><br>💰 Нарх: <b>"+price+" сомонӣ</b>";document.getElementById("payment").style.display="block";window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"})}
-function paid(){let id=document.getElementById("playerId").value.trim(),p=document.getElementById("product"),o=p.options[p.selectedIndex],name=o.text,price=o.getAttribute("data-price");let message="Салом! Ман фармоиши Almaz Shop-ро пардохт кардам.%0A%0A🎮 Free Fire ID: "+encodeURIComponent(id)+"%0A💎 Маҳсулот: "+encodeURIComponent(name)+"%0A💰 Нарх: "+encodeURIComponent(price)+" сомонӣ%0A%0A📸 Ҳоло чекро мефиристам.";document.getElementById("telegramLink").href="https://t.me/shohdanater?text="+message;document.getElementById("receipt").style.display="block";window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"})}
+function updatePrice(){var p=document.getElementById('product');document.getElementById('price').innerHTML='💰 Нарх: '+p.value+' сомонӣ';}
+function showPayment(){var id=document.getElementById('playerId').value.trim();if(id===''){alert('⚠️ Аввал Free Fire ID-ро навис!');return;}var p=document.getElementById('product'),name=p.options[p.selectedIndex].text,price=p.value;document.getElementById('orderInfo').innerHTML='🎮 Free Fire ID: <b>'+id+'</b><br>💎 Маҳсулот: <b>'+name+'</b><br>💰 Нарх: <b>'+price+' сомонӣ</b>';document.getElementById('payment').style.display='block';}
+function paid(){var id=document.getElementById('playerId').value.trim(),p=document.getElementById('product'),name=p.options[p.selectedIndex].text,price=p.value;var message='Салом! Ман фармоиши Almaz Shop-ро пардохт кардам.\n\n🎮 Free Fire ID: '+id+'\n💎 Маҳсулот: '+name+'\n💰 Нарх: '+price+' сомонӣ\n\n📸 Ҳоло чекро мефиристам.';document.getElementById('telegramLink').href='https://t.me/shohdanaterr?text='+encodeURIComponent(message);document.getElementById('receipt').style.display='block';}
 </script>
 </body>
 </html>
